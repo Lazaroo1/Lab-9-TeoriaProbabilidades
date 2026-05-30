@@ -1,4 +1,4 @@
-# Laboratorio 8 — MM3014 Teoría de Probabilidades
+# Laboratorio 9 — MM3014 Teoría de Probabilidades
 **Biancka Raxón (24960) · Lázaro Díaz (24713)**
 
 Simulación del proceso de llenado del álbum Panini del Mundial FIFA 2026 mediante técnicas de Monte Carlo.
@@ -9,18 +9,15 @@ Simulación del proceso de llenado del álbum Panini del Mundial FIFA 2026 media
 
 El álbum consta de **980 estampas** distintas. Cada sobre contiene **7 estampas** (todas distintas dentro del mismo sobre). Se asume distribución uniforme e independiente entre sobres.
 
-El laboratorio se divide en tres etapas, cada una con su propio script de Python listo para ejecutar en Google Colab.
-
 ---
 
 ## Archivos
 
 | Archivo | Descripción |
 |---|---|
-| `Lab8_Etapa3_Colab.py` | Simulación con presupuesto fijo (Q 1,000), comparación sobres sueltos vs caja vs estrategia mixta |
-| `Lab8_Etapa4_Colab.py` | Efecto del intercambio de repetidas para K = 1, 2, 5, 10 |
-| `Lab8_Etapa5_Colab.py` | Simulación del álbum real (N = 980), 5 preguntas originales |
-| `Lab8_Etapa5.docx` | Informe con resultados, gráficas y reflexiones de la Etapa 5 |
+| `lab9-24960-24713.ipynb` | Notebook con todas las simulaciones de la Etapa 5 (álbum real N = 980) |
+| `Lab9_Etapa5.pdf` | Informe con resultados, gráficas y reflexiones de la Etapa 5 |
+| `README.md` | Este archivo |
 
 ---
 
@@ -83,18 +80,16 @@ Se usan menos repeticiones porque cada simulación es ~10× más costosa que con
 
 ## Cómo ejecutar
 
-Todos los scripts están diseñados para Google Colab. Solo pegar el contenido en una celda y ejecutar — no requieren instalar nada adicional (numpy y matplotlib vienen incluidos).
+El notebook está diseñado para Google Colab. Abrirlo y ejecutar todas las celdas en orden — no requiere instalar nada adicional (numpy y matplotlib vienen incluidos).
 
 ```python
-# Semilla usada en todas las etapas
+# Semilla usada en todas las simulaciones
 np.random.seed(2026)
 ```
 
 Para correr localmente:
 
 ```bash
-pip install numpy matplotlib
-python Lab8_Etapa3_Colab.py
-python Lab8_Etapa4_Colab.py
-python Lab8_Etapa5_Colab.py
+pip install numpy matplotlib jupyter
+jupyter notebook lab9-24960-24713.ipynb
 ```
