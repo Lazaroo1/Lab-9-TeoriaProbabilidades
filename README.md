@@ -19,34 +19,6 @@ El álbum consta de **980 estampas** distintas. Cada sobre contiene **7 estampas
 | `Lab9_Etapa5.pdf` | Informe con resultados, gráficas y reflexiones de la Etapa 5 |
 | `README.md` | Este archivo |
 
----
-
-## Etapa 3 — Presupuesto y costo (N = 100)
-
-Parámetros: N = 100, S = 7, R = 10,000, semilla 2026.
-
-Simula tres estrategias de compra con presupuesto de Q 1,000:
-- **Sobres sueltos** a Q 9.50 c/u (máx. 105 sobres)
-- **Caja** de 104 sobres a Q 975
-- **Estrategia mixta**: caja + sobres sueltos con el presupuesto restante
-
-Responde tres preguntas de análisis sobre máximos comprables, conveniencia de la caja y estrategia óptima.
-
----
-
-## Etapa 4 — Intercambio de repetidas (N = 100)
-
-Parámetros: N = 100, S = 7, R = 10,000, semilla 2026.
-
-### Parte A
-Simula el proceso hasta completar el álbum para K = 1, 2, 5, 10. Calcula media, desviación estándar y reducción porcentual respecto al caso sin intercambio. Genera histogramas superpuestos.
-
-### Parte B
-Para cada K y cada M ∈ {20, 25, …, 70}, estima la probabilidad de completar el álbum con exactamente M sobres. Genera curva de probabilidad vs M e identifica los umbrales del 50 %, 75 % y 90 %.
-
-> **Nota:** la Parte B puede tardar ~7 minutos con R = 10,000. Para pruebas rápidas bajar a R = 1,000.
-
----
 
 ## Etapa 5 — Álbum real (N = 980)
 
